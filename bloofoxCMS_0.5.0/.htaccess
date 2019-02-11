@@ -1,0 +1,45 @@
+#//*****************************************************************//
+#// This file is part of bloofoxCMS!
+#// - .htaccess -
+#//
+#// Copyrights (c) 2006-2013 Alexander Lang, Germany
+#// info@bloofox.com
+#// http://www.bloofox.com
+#//
+#// bloofoxCMS is free software; you can redistribute it and/or modify
+#// it under the terms of the GNU General Public License as published by
+#// the Free Software Foundation; either version 2 of the License, or
+#// any later version.
+#//
+#// bloofoxCMS is distributed in the hope that it will be useful,
+#// but WITHOUT ANY WARRANTY; without even the implied warranty of
+#// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+#// GNU General Public License for more details.
+#//*****************************************************************//
+
+# mod_rewrite configuration
+<IfModule mod_rewrite.c>
+RewriteEngine On
+# default rules
+RewriteRule ^(plugin)\.([0-9]+).html$ index.php?page=$2 [QSA,NC,L]
+RewriteRule ^(plugin)\.([0-9]+)\.(.*)\.([0-9]+).html$ index.php?page=$2&$3=$4 [QSA,NC,L]
+RewriteRule ^(plugin)\.([0-9]+)\.(.*)\.([0-9]+)_([0-9]+).html$ index.php?page=$2&start=$5&$3=$4 [QSA,NC,L]
+RewriteRule ^(.*)\.([0-9]+).html$ index.php?page=$2 [QSA,NC,L]
+RewriteRule ^(.*)\.([0-9]+)_([0-9]+).html$ index.php?page=$2&start=$3 [QSA,NC,L]
+
+# advanced rules for subdirectories
+#RewriteBase /cms
+#RewriteRule ^.*/captcha\.php$ /cms/captcha.php [QSA,L]
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^(.*)$ /cms/index.php [QSA,NC]
+#RewriteRule ^.*/templates/(.*)$ /cms/templates/$1 [QSA,NC]
+#RewriteRule ^.*/media/(.*)$ /cms/media/$1 [QSA,NC]
+</IfModule>
+
+# bloofoxCMS works fine with register_globals = off
+# you should set it off, if you do not need it!
+#php_flag register_globals off
+
+# debug option to display php errors
+php_value display_errors 1

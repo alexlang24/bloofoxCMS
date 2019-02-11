@@ -1,0 +1,128 @@
+<!-- BEGIN settings -->
+{config_title}
+<div id="content-inlay">
+{config_error}
+
+<form action="{config_action}" method="post">
+<div id="general">
+<table class="card">
+<tr class="bg_color3">
+	<td class="tab">{tab_general}</td>
+</tr>
+<tr class='bg_color2'>
+	<td>
+		<table>
+		<tr class='bg_color2'>
+			<td class="column">{config_name}</td>
+			<td>{config_name_input}</td>
+		</tr>
+		<tr class='bg_color2'>
+			<td>{config_lang_id}</td>
+			<td>{config_lang_id_input}</td>
+		</tr>
+		<tr class='bg_color2'>
+			<td>{config_templ_id}</td>
+			<td>{config_templ_id_input}</td>
+		</tr>
+		<tr class='bg_color2'>
+			<td>{config_urls}</td>
+			<td>{config_urls_input}</td>
+		</tr>
+		<tr class='bg_color2'>
+			<td>{config_meta_title}</td>
+			<td>{config_meta_title_input}</td>
+		</tr>
+		<tr class='bg_color2'>
+			<td>{config_mod_rewrite}</td>
+			<td>{config_mod_rewrite_input}</td>
+		</tr>
+		<tr class='bg_color2'>
+			<td>{config_mail}</td>
+			<td>{config_mail_input}</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+</table>
+</div>
+
+<div id="options">
+<table class="card">
+<tr class="bg_color3">
+	<td class="tab"><ul><li class="toggle" onclick="show_hide_layers('options','','hide','options_closed','','show');"><span>{tab_options}</span></li></ul></td>
+</tr>
+<tr class='bg_color2'>
+	<td>
+		<table>
+		<tr class='bg_color2'>
+			<td>{config_meta_copyright}</td>
+			<td>{config_meta_copyright_input}</td>
+		</tr>
+		<tr class='bg_color2'>
+			<td class="column">{config_meta_desc}</td>
+			<td>{config_meta_desc_input}</td>
+		</tr>
+		<tr class='bg_color2'>
+			<td>{config_meta_keywords}</td>
+			<td>{config_meta_keywords_input}</td>
+		</tr>
+		<tr class='bg_color2'>
+			<td>{config_meta_author}</td>
+			<td>{config_meta_author_input}</td>
+		</tr>
+		<tr class='bg_color2'>
+			<td>{config_meta_charset}</td>
+			<td>{config_meta_charset_input}</td>
+		</tr>
+		<tr class='bg_color2'>
+			<td>{config_meta_doctype}</td>
+			<td>{config_meta_doctype_input}</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+</table>
+</div>
+
+<div id="options_closed">
+<table class="card">
+<tr class="bg_color3">
+	<td class="tab"><ul><li onclick="show_hide_layers('options_closed','','hide','options','','show');"><span>{tab_options}</span></li></ul></td>
+</tr>
+</table>
+</div>
+
+<div id="securities">
+<table class="card">
+<tr class="bg_color3">
+	<td class="tab"><ul><li class="toggle" onclick="show_hide_layers('securities','','hide','securities_closed','','show');"><span>{tab_security}</span></li></ul></td>
+</tr>
+<tr class='bg_color2'>
+	<td>
+		<table>
+		<tr class='bg_color2'>
+			<td class="column">{config_groups}</td>
+			<td>{config_groups_input}</td>
+		</tr>
+		<tr class='bg_color2'>
+			<td>{config_defaultgroup}</td>
+			<td>{config_defaultgroup_input}</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+</table>
+</div>
+
+<div id="securities_closed">
+<table class="card">
+<tr class="bg_color3">
+	<td class="tab"><ul><li onclick="show_hide_layers('securities_closed','','hide','securities','','show');"><span>{tab_security}</span></li></ul></td>
+</tr>
+</table>
+</div>
+<br />
+{config_button_send}
+</form>
+</div>
+<!-- END settings -->

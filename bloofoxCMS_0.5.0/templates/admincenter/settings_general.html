@@ -1,0 +1,140 @@
+<!-- BEGIN settings -->
+{settings_title}
+<div id="content-inlay">
+{settings_error}
+{confirm_message}
+
+<form action="{settings_action}" method="post">
+
+<table class="card">
+<tr class='bg_color3'>
+	<td class="tab">{tab_general}</td>
+</tr>
+<tr>
+	<td>
+	<table class="card">
+	<tr>
+		<td class="card-column-fix">{settings_u1}</td>
+		<td>{settings_u1_input}</td>
+	</tr>
+	<tr><td colspan="2"><hr /></td></tr>
+	<tr>
+		<td>{settings_u6}</td>
+		<td>{settings_u6_label} {settings_u6_input}</td>
+	</tr>
+	<tr><td colspan="2"><hr /></td></tr>
+	<tr>
+		<td>{settings_u2}</td>
+		<td>{settings_u2_input}</td>
+	</tr>
+	<tr><td colspan="2"><hr /></td></tr>
+	<tr>
+		<td>{settings_u7}</td>
+		<td>{settings_u7_input}</td>
+	</tr>
+	<tr><td colspan="2"><hr /></td></tr>
+	<tr>
+		<td>{settings_u4}</td>
+		<td>{settings_u4_input}</td>
+	</tr>
+	<tr><td colspan="2"><hr /></td></tr>
+	<tr>
+		<td>{settings_u30}</td>
+		<td>{settings_u30_input}</td>
+	</tr>
+	<tr><td colspan="2"><hr /></td></tr>
+	<tr>
+		<td>{settings_u40}</td>
+		<td>{settings_u40_input}</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+</table>
+
+<div id="options">
+<table class="card">
+<tr class='bg_color3'>
+	<td class="tab"><ul><li class="toggle" onclick="show_hide_layers('options','','hide','options_closed','','show');"><span>{tab_content}</span></li></ul></td>
+</tr>
+<tr>
+	<td>
+	<table class="card">
+	<tr>
+		<td class="card-column-fix">{settings_u8}</td>
+		<td>{settings_u8_input}</td>
+	</tr>
+	<tr><td colspan="2"><hr /></td></tr>
+	<tr>
+		<td>{settings_u10}</td>
+		<td>{settings_u10_label} {settings_u10_input}</td>
+	</tr>
+	<tr><td colspan="2"><hr /></td></tr>
+	<tr>
+		<td>{settings_u12}</td>
+		<td>{settings_u12_label} {settings_u12_input}</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+</table>
+</div>
+
+<div id="options_closed">
+<table class="card">
+<tr class="bg_color3">
+	<td class="tab"><ul><li onclick="show_hide_layers('options_closed','','hide','options','','show');"><span>{tab_content}</span></li></ul></td>
+</tr>
+</table>
+</div>
+
+<div id="securities">
+<table class="card">
+<tr class='bg_color3'>
+	<td class="tab"><ul><li class="toggle" onclick="show_hide_layers('securities','','hide','securities_closed','','show');"><span>{tab_security}</span></li></ul></td>
+</tr>
+<tr>
+	<td>
+	<table class="card">
+	<tr>
+		<td class="card-column-fix">{settings_u3}</td>
+		<td>{settings_u3_input}</td>
+	</tr>
+	<tr><td colspan="2"><hr /></td></tr>
+	<tr>
+		<td>{settings_u5}</td>
+		<td>{settings_u5_input}</td>
+	</tr>
+	<tr><td colspan="2"><hr /></td></tr>
+	<tr>
+		<td>{settings_u9}</td>
+		<td>{settings_u9_input}</td>
+	</tr>
+	<tr><td colspan="2"><hr /></td></tr>
+	<tr>
+		<td>{settings_u20}</td>
+		<td>{settings_u20_input}</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+</table>
+</div>
+
+<div id="securities_closed">
+<table class="card">
+<tr class="bg_color3">
+	<td class="tab"><ul><li onclick="show_hide_layers('securities_closed','','hide','securities','','show');"><span>{tab_security}</span></li></ul></td>
+</tr>
+</table>
+</div>
+
+</div>
+
+<br />
+{settings_sid}
+{settings_button_send}
+{settings_button_reset}
+</form>
+</div>
+<!-- END settings -->

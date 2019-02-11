@@ -1,0 +1,47 @@
+{tmpl_doctype}
+
+<html>
+<head>
+{tmpl_header}
+<script type="text/javascript" src="functions.js"></script>
+{tmpl_plugin_header}
+</head>
+
+<body>
+<div id="profile">
+	{menu_myprofile}<br />
+	{menu_changepwd}<br /> 
+	{menu_logout}<br />
+	
+	<div class="close">
+	<a href="#" onclick="show_hide_layers('profile','','hide');">{menu_closelayer}</a>
+	</div>
+</div>
+
+<div id="wrap">
+	<div id="header">
+	<div style="float: left;"><span class="bold">bloofoxCMS Admincenter</span></div>
+	<div style="text-align: right; font-size: 11px; font-weight: bold;">
+	<a href="#" onclick="show_hide_layers('profile','','show');">{menu_username}</a> &nbsp;&nbsp; {menu_logout}</div> 
+	<hr />
+	</div>
+	
+	<div id="sidebar">{tmpl_menu}</div>
+	<div id="space"></div>
+	<div id="main" onclick="show_hide_layers('profile','','hide');">
+		<div id="content">
+		{tmpl_message}
+		{tmpl_content}
+		{tmpl_plugin_script}
+		</div>
+	</div>
+
+	<div id="footer">
+	<hr />
+	<div style="text-align: right; float: right; font-size: 11px;">{tmpl_top}</div>
+	<div style="text-align: left; font-size: 11px;">{tmpl_footer}</div>
+	</div>
+</div>
+
+</body>
+</html>

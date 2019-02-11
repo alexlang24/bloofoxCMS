@@ -1,0 +1,26 @@
+<!-- BEGIN step1 -->
+<form action="{step1_action}" method="post">
+<table border="0" width="100%">
+<tr>
+	<td valign="top">
+	{step1_text}
+	{step1_error}
+	<br />
+	{step1_next_step}
+	</td>
+	<td align="right" valign="top">
+	<table width="380">
+	<tr>
+		<td>
+		<p>{step1_host}:<br /><input type="text" name="host" size="20" value="{host_value}" /></p>
+		<p>{step1_database}:<br /><input type="text" name="database" size="20" value="{database_value}" /></p>
+		<p>{step1_username}:<br /><input type="text" name="username" size="20" value="{username_value}" /></p>
+		<p>{step1_password}:<br /><input type="password" name="password" size="20" /></p>
+		</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+</table>
+</form>
+<!-- END step1 -->

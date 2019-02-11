@@ -1,0 +1,24 @@
+<!-- BEGIN content -->
+<h1>{login_title}</h1>
+
+{login_error}
+
+<div>
+<table border="0" width="150" cellspacing="0" cellpadding="0">
+<tr>
+	<td>
+	<form name="login" action="{login_action}" method="post">
+	<p class="smallbold">{login_user}</p>
+	<input class='login_input' type="text" name="username" />
+	<p class="smallbold">{login_pass}</p>
+	<input class='login_input' type="password" name="password" />
+	<br />
+	<input class='login_button' type="submit" value="Login" name="login" />
+	</form>
+	</td>
+</tr>
+</table>
+<br />
+{login_register}
+</div>
+<!-- END content -->

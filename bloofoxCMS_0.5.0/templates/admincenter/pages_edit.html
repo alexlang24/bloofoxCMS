@@ -1,0 +1,155 @@
+<!-- BEGIN content -->
+{content_title}
+<div id="content-inlay">
+{expl_error}
+
+<form action="{expl_action}" method="post">
+<div id="general">
+<table class="card">
+<tr class="bg_color3">
+	<td class="tab">{tab_general}</td>
+</tr>
+<tr class='bg_color2'>
+	<td>
+		<table>
+		<tr class='bg_color2'>
+			<td class="column">{expl_name}</td>
+			<td>{expl_name_input}</td>
+		</tr>
+		<tr class='bg_color2'>
+			<td class="column">{expl_title}</td>
+			<td>{expl_title_input}</td>
+		</tr>
+		<tr class='bg_color2'>
+			<td>{expl_link_type}</td>
+			<td>{expl_link_type_input}</td>
+		</tr>
+		<tr class='bg_color2'>
+			<td>{expl_link_url}</td>
+			<td>{expl_link_url_input}</td>
+		</tr>
+		<tr class='bg_color2'>
+			<td>{expl_link_eid}</td>
+			<td>{expl_link_eid_input}</td>
+		</tr>
+		<tr class='bg_color2'>
+			<td>{expl_link_plugin}</td>
+			<td>{expl_link_plugin_input}</td>
+		</tr>
+		<tr class='bg_color2'>
+			<td>{expl_template}</td>
+			<td>{expl_template_input}</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+</table>
+</div>
+
+<div id="options">
+<table class="card">
+<tr class="bg_color3">
+	<td class="tab"><ul><li class="toggle" onclick="show_hide_layers('options','','hide','options_closed','','show');"><span>{tab_options}</span></li></ul></td>
+</tr>
+<tr class='bg_color2'>
+	<td>
+		<table>
+		<tr class='bg_color2'>
+			<td class="column">{expl_link_target}</td>
+			<td>{expl_link_target_input}</td>
+		</tr>
+		<tr class='bg_color2'>
+			<td>{expl_link_param}</td>
+			<td>{expl_link_param_input}</td>
+		</tr>
+		<tr class='bg_color2'>
+			<td>{expl_blocked}</td>
+			<td>{expl_blocked_input}</td>
+		</tr>
+		<tr class='bg_color2'>
+			<td>{expl_invisible}</td>
+			<td>{expl_invisible_input}</td>
+		</tr>
+		<tr class='bg_color2'>
+			<td>{expl_startdate}</td>
+			<td>{expl_startdate_input}</td>
+		</tr>
+		<tr class='bg_color2'>
+			<td>{expl_enddate}</td>
+			<td>{expl_enddate_input}</td>
+		</tr>
+		<tr class='bg_color2'>
+			<td>{expl_keywords}</td>
+			<td>{expl_keywords_input}</td>
+		</tr>
+		<tr class='bg_color2'>
+			<td>{expl_description}</td>
+			<td>{expl_description_input}</td>
+		</tr>
+		<tr class='bg_color2'>
+			<td>{expl_sorting}</td>
+			<td>{expl_sorting_input}</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+</table>
+</div>
+
+<div id="options_closed">
+<table class="card">
+<tr class="bg_color3">
+	<td class="tab"><ul><li onclick="show_hide_layers('options_closed','','hide','options','','show');"><span>{tab_options}</span></li></ul></td>
+</tr>
+</table>
+</div>
+
+<div id="securities">
+<table class="card">
+<tr class="bg_color3">
+	<td class="tab"><ul><li class="toggle" onclick="show_hide_layers('securities','','hide','securities_closed','','show');"><span>{tab_security}</span></li></ul></td>
+</tr>
+<tr class='bg_color2'>
+	<td>
+		<table>
+		<tr class='bg_color2'>
+			<td class="column">{expl_groups}</td>
+			<td>{expl_groups_input}</td>
+		</tr>
+		<tr class='bg_color2'>
+			<td>{expl_created_by}</td>
+			<td>{expl_created_by_info}</td>
+		</tr>
+		<tr class='bg_color2'>
+			<td>{expl_created_at}</td>
+			<td>{expl_created_at_info}</td>
+		</tr>
+		<tr class='bg_color2'>
+			<td>{expl_changed_by}</td>
+			<td>{expl_changed_by_info}</td>
+		</tr>
+		<tr class='bg_color2'>
+			<td>{expl_changed_at}</td>
+			<td>{expl_changed_at_info}</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+</table>
+</div>
+
+<div id="securities_closed">
+<table class="card">
+<tr class="bg_color3">
+	<td class="tab"><ul><li onclick="show_hide_layers('securities_closed','','hide','securities','','show');"><span>{tab_security}</span></li></ul></td>
+</tr>
+</table>
+</div>
+
+<br />
+{expl_eid}
+{expl_button_send}
+{expl_button_reset}
+</form>
+</div>
+<!-- END content -->

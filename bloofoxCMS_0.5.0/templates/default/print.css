@@ -1,0 +1,147 @@
+/***********/
+/* General */
+/***********/
+
+body {
+background-color : #fff; 
+font-family : sans-serif; 
+color : #000; 
+margin-left : 10px;
+margin-top : 0px;
+margin-right : 0px;
+margin-bottom : 0px;
+padding : 0px;
+border : 0px;
+} 
+
+table {
+border : none; 
+padding : 0px; 
+margin : 0px;
+} 
+
+/**************/
+/* Textformat */
+/**************/
+
+a, p, td, h1, h2, h3 {
+font-family : sans-serif;
+padding: 0px;
+margin: 2px;
+} 
+
+p, td {
+font-size : 12px;
+} 
+
+h1 {
+font-size : 18px;
+font-weight: bold;
+text-indent : 0px; 
+padding : 5px 0; 
+color : #000; 
+border : 0;
+} 
+
+h2 {
+font-size : 12px;
+font-weight: bold;
+text-indent : 0px; 
+padding : 2px 0; 
+color : #000; 
+border : 0;
+}
+
+h3 {
+font-size : 14px;
+font-weight: bold;
+border : 0;
+}
+
+div.content {
+	margin: 10px 0px;
+}
+
+div.content_inlay {
+	margin: 0px 0px 5px 0px;
+}
+
+.bold {
+font-weight : bold; 
+} 
+
+.small {
+font-size : 11px; 
+} 
+
+.center {
+text-align : center; 
+} 
+
+.smallcenter {
+font-size : 11px; 
+text-align : center; 
+}
+
+.smallbold {
+font-size: 11px;
+font-weight: bold;
+}
+
+.smallright {
+font-size : 11px; 
+text-align : right; 
+}
+
+.error {
+color : red; 
+font-weight : bold; 
+} 
+
+.search {
+color : green; 
+} 
+
+/**********/
+/* Images */
+/**********/
+
+img {
+border : none; 
+}
+
+/**************/
+/* Hyperlinks */
+/**************/
+
+a:link {
+color : #000088; 
+text-decoration : underline; 
+} 
+a:visited {
+color : #000088; 
+text-decoration : underline; 
+} 
+a:active {
+color : #000088; 
+text-decoration : none; 
+} 
+a:hover {
+color : #000000; 
+text-decoration : underline; 
+}
+
+/**********/
+/* Layout */
+/**********/
+
+#wrap {
+width: 100%;
+font-size: 12px;
+}
+
+#wrap-footer {
+clear: both;
+margin-top: 15px;
+font-size: 11px;
+}

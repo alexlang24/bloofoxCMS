@@ -1,0 +1,71 @@
+/***********/
+/* General */
+/***********/
+
+body {
+background-color : #fff; 
+font-family : sans-serif; 
+color : #000; 
+margin-left : 0px;
+margin-top : 0px;
+margin-right : 0px;
+margin-bottom : 0px;
+padding : 0px;
+border : 0px;
+} 
+
+table {
+border : none;
+padding : 0px;
+margin : 0px;
+}
+
+img {
+border : none;
+}
+
+/**************/
+/* Textformat */
+/**************/
+
+a, p, td, li, h1 {
+font-family : sans-serif;
+padding: 0px;
+margin: 2px;
+font-size : 12px;
+} 
+
+h1 {
+font-size : 14px;
+font-weight: bold;
+border : 0;
+}
+
+.bold {
+font-weight : bold; 
+} 
+
+.small {
+font-size : 11px; 
+}
+
+/**************/
+/* Hyperlinks */
+/**************/
+
+a:link {
+color : #000088; 
+text-decoration : underline; 
+} 
+a:visited {
+color : #000088; 
+text-decoration : underline; 
+} 
+a:active {
+color : #000088; 
+text-decoration : none; 
+} 
+a:hover {
+color : #e4b900; 
+text-decoration : underline; 
+} 

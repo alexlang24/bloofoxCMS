@@ -1,0 +1,103 @@
+<!-- BEGIN home -->
+{home_pwd_warning}
+<script type="text/javascript" src="http://www.bloofox.com/versioncheck/update.js"></script>
+<script type="text/javascript">
+	if (current_simple_version != "{home_upd_version}") {
+		document.write("{home_upd_warning}");
+	}
+</script>
+
+{home_title}
+<div id="content-inlay">
+	<table class="card">
+	<tr class="bg_color3">
+		<td>{home_system_title}</td>
+	</tr>
+	<tr class="bg_color2">
+		<td>
+		<table class="card">
+		<tr>
+			<td class="card-column-fix">{home_server_label}</td><td>{home_server_info}</td><td></td>
+		</tr>
+		<tr>
+			<td>{home_database_label}</td><td>{home_database_info}</td><td></td>
+		</tr>
+		<tr>
+			<td>{home_php_label}</td><td>{home_php_info}</td><td></td>
+		</tr>
+		<tr>
+			<td>{home_mysql_label}</td><td>{home_mysql_info}</td><td></td>
+		</tr>
+		<tr>
+			<td>{home_bfcmsfile_label}</td><td>{home_bfcmsfile_info}</td><td></td>
+		</tr>
+		<tr>
+			<td>{home_bfcmsdb_label}</td><td>{home_bfcmsdb_info}</td><td></td>
+		</tr>
+		</table>
+		</td>
+	</tr>
+	</table>
+	<br />
+
+	<table class="card">
+	<tr class="bg_color3">
+		<td>{home_account_title}</td>
+	</tr>
+	<tr class="bg_color2">
+		<td>
+		<table class="card">
+		<tr>
+			<td class="card-column-fix">{home_loggedin_label}</td><td>{home_loggedin_info}</td>
+		</tr>
+		<tr>
+			<td>{home_lastlogin_label}</td><td>{home_lastlogin_info}</td>
+		</tr>
+		<tr>
+			<td>{home_failedlogins_label}</td><td>{home_failedlogins_info}</td>
+		</tr>
+		</table>
+		</td>
+	</tr>
+	</table>
+	<br />
+	
+	<table class="card">
+	<tr class="bg_color3">
+		<td>{home_online_title}</td>
+	</tr>
+	<tr class="bg_color2">
+		<td>
+		<p>{home_online_users}</p>
+		</td>
+	</tr>
+	</table>
+	<br />
+		
+	<table class="card">
+	<tr class="bg_color3">
+		<td>{home_iplog_title}</td>
+	</tr>
+	<tr class="bg_color2">
+		<td>
+		{home_iplog}
+		</td>
+	</tr>
+	</table>
+	<br />
+	
+	
+	{legend_title}
+	<div id="legend">
+	<ul>
+		<li>{legend_new}</li>
+		<li>{legend_edit}</li>
+		<li>{legend_delete}</li>
+		<li>{legend_content}</li>
+		<li>{legend_preview}</li>
+		<li>{legend_profile}</li>
+		<li>{legend_quit}</li>
+	</ul>
+	</div>
+</div>
+<!-- END home -->

@@ -1,0 +1,13 @@
+input.email {
+	width: 380px;
+}
+input.text {
+	width: 250px;
+}
+input.captcha {
+	width: 160px;
+}
+textarea.message {
+	width: 250px;
+	height: 100px;
+}

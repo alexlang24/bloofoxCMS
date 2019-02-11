@@ -1,0 +1,20 @@
+#firstline {
+	border-bottom: 1px solid #ccc;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+
+.guestbook {
+	border-bottom: 1px solid #ccc;
+	padding: 5px;
+	display: block;
+	margin-bottom: 5px;
+}
+
+input.text {
+	width: 180px;
+}
+
+input.message {
+	width: 320px;
+}

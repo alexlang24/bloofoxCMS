@@ -1,0 +1,104 @@
+<!-- BEGIN user -->
+{home_title}
+<div id="content-inlay">
+{home_error}
+
+<form action="{home_action}" method="post" enctype="multipart/form-data">
+<div id="general">
+<table class="card">
+<tr class="bg_color3">
+	<td class="tab">{tab_general}</td>
+</tr>
+<tr class='bg_color2'>
+	<td>
+		<table>
+		<tr class="bg_color2">
+			<td class="column">{home_firstname_title}</td>
+			<td>{home_firstname}</td>
+		</tr>
+		<tr class="bg_color2">
+			<td>{home_lastname_title}</td>
+			<td>{home_lastname}</td>
+		</tr>
+		<tr class="bg_color2">
+			<td>{home_address1_title}</td>
+			<td>{home_address1}</td>
+		</tr>
+		<tr class="bg_color2">
+			<td>{home_address2_title}</td>
+			<td>{home_address2}</td>
+		</tr>
+		<tr class="bg_color2">
+			<td>{home_city_title}</td>
+			<td>{home_city}</td>
+		</tr>
+		<tr class="bg_color2">
+			<td>{home_zip_code_title}</td>
+			<td>{home_zip_code}</td>
+		</tr>
+		<tr class="bg_color2">
+			<td>{home_email_title}</td>
+			<td>{home_email}</td>
+		</tr>
+		<tr class="bg_color2">
+			<td>{home_showemail_title}</td>
+			<td>{home_showemail}</td>
+		</tr>
+		<tr class="bg_color2">
+			<td>{home_birthday_title}</td>
+			<td>{home_birthday}</td>
+		</tr>
+		<tr class="bg_color2">
+			<td>{home_gender_title}</td>
+			<td>{home_gender}</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+</table>
+</div>
+
+<div id="options">
+<table class="card">
+<tr class="bg_color3">
+	<td class="tab"><ul><li class="toggle" onclick="show_hide_layers('options','','hide','options_closed','','show');"><span>{tab_options}</span></li></ul></td>
+</tr>
+<tr class='bg_color2'>
+	<td>
+		<table>
+		<tr class="bg_color2">
+			<td class="column">{home_picture_title}</td>
+			<td>
+			{home_picture}<br />
+			{home_deletepic} {home_deletepic_title}
+			</td>
+		</tr>
+		<tr class="bg_color2">
+			<td>{home_be_lang_title}</td>
+			<td>{home_be_lang}</td>
+		</tr>
+		<tr class="bg_color2">
+			<td>{home_be_tmpl_title}</td>
+			<td>{home_be_tmpl}</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+</table>
+</div>
+
+<div id="options_closed">
+<table class="card">
+<tr class="bg_color3">
+	<td class="tab"><ul><li onclick="show_hide_layers('options_closed','','hide','options','','show');"><span>{tab_options}</span></li></ul></td>
+</tr>
+</table>
+</div>
+
+
+<br />
+{home_button_send}
+{home_button_reset}
+</form>
+</div>
+<!-- END user -->

@@ -1,0 +1,30 @@
+<!-- BEGIN login -->
+<p><a href="http://www.bloofox.com" title="www.bloofox.com">
+<img src="../templates/default/images/logo.gif" alt="{login_title}" border="0" width="210" height="50" /></a></p>
+	
+{login_error}
+{confirm_message}
+
+<div id="login_wrap">
+	<div id="login_header">{login_title}</div>
+	
+	<form name="login" action="{login_action}" method="post">
+	
+	<div align="center">
+		<div class="login_caption">{login_username}</div>
+		<br />
+		<input id="login_input" type="text" name="username" />
+		
+		<div class="login_caption">{login_password}</div>
+		<br />
+		<input id="login_input" type="password" name="password" />
+		
+		<input type="hidden" name="action" value="login">
+	</div>
+	
+	<input id="login_button" type="submit" value="{login_button}">
+	</form>
+	
+	<p id="login_footer">Powered by <a href="http://www.bloofox.com" title="bloofoxCMS">bloofoxCMS</a>; &copy; bloofox, Alexander Lang</p>
+</div>
+<!-- END login -->

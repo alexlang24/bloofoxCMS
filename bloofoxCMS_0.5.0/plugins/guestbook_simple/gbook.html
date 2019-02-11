@@ -1,0 +1,55 @@
+<!-- BEGIN content -->
+<div class="content">
+{gbook_title}
+{gbook_error}
+<a href="#sign">{gbook_sign}</a>
+
+<p class="center">{gbook_prev} - {gbook_pages} - {gbook_next}</p>
+<div id="firstline"></div>
+{gbook_content}
+<p class="center">{gbook_prev} - {gbook_pages} - {gbook_next}</p>
+
+<form action="{gbook_action}" method="post">
+<h3><a name="sign" id="sign"></a>{gbook_sign}</h3>
+<table border="0">
+<tr>
+	<td colspan="2">
+	{gbook_name}*:<br />
+	{gbook_name_input}
+	</td>
+</tr>
+<tr>
+	<td colspan="2">
+	{gbook_email}*:<br />
+	{gbook_email_input}
+	</td>
+</tr>
+<tr>
+	<td colspan="2">
+	{gbook_hp}:<br />
+	{gbook_hp_input}
+	</td>
+</tr>
+<tr>
+	<td colspan="2">
+	{gbook_message}*:<br />
+	{gbook_message_input}
+	</td>
+</tr>
+<tr>
+	<td>
+	{gbook_captcha}<br />
+	{gbook_captcha_input}
+	</td>
+	<td>
+	{gbook_captcha_image}
+	</td>
+</tr>
+<tr>
+	<td colspan="2">{gbook_submit} </td>
+</tr>
+</table>
+<br />
+</form>
+</div>
+<!-- END content -->
