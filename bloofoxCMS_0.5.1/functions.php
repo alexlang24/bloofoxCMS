@@ -170,13 +170,13 @@ function create_url($eid,$string,$mod_rewrite,$ext_name="",$ext_id="",$page=0)
 // replace special signs in html code
 function replace_specialchars($string)
 {
-	$string = str_replace("ä","&auml;",$string);
-	$string = str_replace("ö","&ouml;",$string);
-	$string = str_replace("ü","&uuml;",$string);
-	$string = str_replace("Ä","&Auml;",$string);
-	$string = str_replace("Ö","&Ouml;",$string);
-	$string = str_replace("Ü","&Uuml;",$string);
-	$string = str_replace("ß","&szlig;",$string);
+	$string = str_replace("ï¿½","&auml;",$string);
+	$string = str_replace("ï¿½","&ouml;",$string);
+	$string = str_replace("ï¿½","&uuml;",$string);
+	$string = str_replace("ï¿½","&Auml;",$string);
+	$string = str_replace("ï¿½","&Ouml;",$string);
+	$string = str_replace("ï¿½","&Uuml;",$string);
+	$string = str_replace("ï¿½","&szlig;",$string);
 	$string = str_replace("@","&#64;",$string);
 	$string = str_replace("'","&#039;",$string);
 	
@@ -226,13 +226,13 @@ function check_string_rules($string,$length=3,$rule=0)
 	switch($rule)
 	{
 		case '1': // numbers and letters
-			if(!preg_match("([0-9]{1,250})",$string) || !preg_match("([a-zA-ZäöüÄÖÜ]{1,250})",$string)) {
+			if(!preg_match("([0-9]{1,250})",$string) || !preg_match("([a-zA-Zï¿½ï¿½ï¿½ï¿½ï¿½ï¿½]{1,250})",$string)) {
 				return(0);
 			}
 		break;
 		
 		case '2': // numbers, letters and specials signs
-			if(!preg_match("([0-9]{1,250})",$string) || !preg_match("([a-zA-ZäöüÄÖÜ]{1,250})",$string) || !preg_match("([\@\!\?\+\*\|\.\:\_\-]{1,250})",$string)) {
+			if(!preg_match("([0-9]{1,250})",$string) || !preg_match("([a-zA-Zï¿½ï¿½ï¿½ï¿½ï¿½ï¿½]{1,250})",$string) || !preg_match("([\@\!\?\+\*\|\.\:\_\-]{1,250})",$string)) {
 				return(0);
 			}
 		break;
@@ -308,7 +308,7 @@ function validate_date($string)
 // check for valid email
 function email_is_valid($string)
 {
-	if(!preg_match("/([a-z0-9\_\-]{1,250})+@([a-zäöü0-9\_\-\.]{2,250})\.([a-z]{2,5})$/i",$string)) {
+	if(!preg_match("/([a-z0-9\_\-]{1,250})+@([a-zï¿½ï¿½ï¿½0-9\_\-\.]{2,250})\.([a-z]{2,5})$/i",$string)) {
 		return(0);
 	}
 	return(1);
@@ -414,7 +414,7 @@ function CheckInteger($string)
 // checks inputs or parameters for string value
 function CheckString($string)
 {
-  if (!preg_match("=^[a-zäöüß]+$=i",$string))
+  if (!preg_match("=^[a-zï¿½ï¿½ï¿½ï¿½]+$=i",$string))
   {
     return(FALSE); // $string includes other signs
   }
@@ -602,7 +602,7 @@ function create_header($config_vars,$tmpl_vars,$explorer_vars,$sys_plugin_vars)
 // current file version
 function get_current_version()
 {
-	return("bloofoxCMS 0.5.0");
+	return("bloofoxCMS 0.5.1");
 }
 
 // current database version

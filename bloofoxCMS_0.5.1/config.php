@@ -3,7 +3,7 @@
 // This file is part of bloofoxCMS! Do not delete this copyright!!!
 // - config.php -
 //
-// Copyrights (c) 2006-2012 Alexander Lang, Germany
+// Copyrights (c) 2006-2019 Alexander Lang, Germany
 // info@bloofox.com
 // http://www.bloofox.com
 //
