@@ -602,7 +602,7 @@ function create_header($config_vars,$tmpl_vars,$explorer_vars,$sys_plugin_vars)
 // current file version
 function get_current_version()
 {
-	return("bloofoxCMS 0.5.1");
+	return("bloofoxCMS 0.5.0");
 }
 
 // current database version
