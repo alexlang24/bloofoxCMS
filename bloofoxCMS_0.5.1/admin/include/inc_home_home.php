@@ -79,7 +79,7 @@ $tpl->set_var(array(
 	"home_bfcmsdb_label"      => get_caption('1120','Database Version'),
 	"home_bfcmsdb_info"       => $database_version,
 	"home_mysql_label"        => "MySQL",
-	"home_mysql_info"         => mysql_get_client_info(),
+	"home_mysql_info"         => mysqli_get_client_info(),
 	"home_php_label"          => "PHP",
 	"home_php_info"           => phpversion(),
 	"home_account_title"      => "<p class='bold'>".get_caption('4620','My Account')."</p>",
