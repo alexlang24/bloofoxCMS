@@ -40,7 +40,7 @@ if(isset($_POST['send'])) {
 	
 	if($error == "") {
 		// copy file from default
-		$fp = fopen("class_mysql.default.php","r");
+		$fp = fopen("class_mysqli.default.php","r");
 		$str = "";
 		while(!feof($fp))
 		{
@@ -53,16 +53,16 @@ if(isset($_POST['send'])) {
 		$str = str_replace("###pw###",$_POST['password'],$str);   // ###password###
 		fclose($fp);
 		
-		if(!file_exists("../system/class_mysql.php")) {
+		if(!file_exists("../system/class_mysqli.php")) {
 			if(is_writeable("../system")) {
-				$fp = fopen("../system/class_mysql.php","w");
+				$fp = fopen("../system/class_mysqli.php","w");
 				fwrite($fp,$str);
 				fclose($fp);
-				@chmod("../system/class_mysql.php",0666);
+				@chmod("../system/class_mysqli.php",0666);
 			}
 		}
   
-		if(!file_exists("../system/class_mysql.php")) {
+		if(!file_exists("../system/class_mysqli.php")) {
 			$error = "<p style='color:red;'>".$strNoFile."</p>";
 		} else {
 			load_url("index.php?page=2");

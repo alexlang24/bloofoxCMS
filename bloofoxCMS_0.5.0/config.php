@@ -26,8 +26,8 @@ $tbl_prefix = "bfCMS_";
 
 // Mysql class
 // by default the path is set to the file class_mysql.php in folder /system.
-// you could change it if you need to place the file class_mysql.php e.g. outside the public www path
-// default: $mysql_config_path = "system/class_mysql.php";
-$mysql_config_path = "system/class_mysql.php";
+// you could change it if you need to place the file class_mysqli.php e.g. outside the public www path
+// default: $mysql_config_path = "system/class_mysqli.php";
+$mysql_config_path = "system/class_mysqli.php";
 
 ?>
