@@ -23,14 +23,14 @@ if(!defined('SYS_INDEX')) {
 	die("You can't call this file directly!");
 }
 
-if(!file_exists("../system/class_mysql.php")) {
+if(!file_exists("../system/class_mysqli.php")) {
 	load_url("index.php?page=1");
 }
 
 if(isset($_POST['send'])) {
 	$error = "";
 	
-	require_once("../system/class_mysql.php");
+	require_once("../system/class_mysqli.php");
 	$db = new DB_Tpl();
 	
 	$db->query("SHOW TABLES LIKE '".$tbl_prefix."sys_charset'");

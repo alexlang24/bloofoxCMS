@@ -27,7 +27,7 @@ if(!defined('SYS_INDEX')) {
 	die("You can't call this file directly!");
 }
 
-if(!file_exists("../system/class_mysql.php")) {
+if(!file_exists("../system/class_mysqli.php")) {
 	load_url("index.php?page=1");
 }
 

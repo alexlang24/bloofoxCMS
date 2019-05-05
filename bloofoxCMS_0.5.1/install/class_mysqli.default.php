@@ -139,8 +139,8 @@ if(!defined('SYS_INDEX')) {
 
       $this->Query_ID = @mysqli_query($this->Link_ID,$Query_String);
       $this->Row   = 0;
-      $this->Errno = mysql_errno();
-      $this->Error = mysql_error();
+      $this->Errno = mysqli_errno($this->Link_ID);
+      $this->Error = mysqli_error($this->Link_ID);
       if (!$this->Query_ID) {
         $this->halt("Invalid SQL: ".$Query_String);
       }

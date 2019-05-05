@@ -34,7 +34,7 @@ if(isset($_POST['send'])) {
 	if(!mandatory_field($_POST['username']) && $error == "") { $error = "<p style='color:red;'>$strErrorUser</p>"; }
 	if(!mandatory_field($_POST['password']) && $error == "") { $error = "<p style='color:red;'>$strErrorPw</p>"; }
 	
-	if(@mysql_connect($_POST['host'],$_POST['username'],$_POST['password']) == FALSE && $error == "") {
+	if(@mysqli_connect($_POST['host'],$_POST['username'],$_POST['password']) == FALSE && $error == "") {
 		$error = "<p style='color:red;'>".$strErrorConnection."</p>";
 	}
 	
