@@ -253,7 +253,10 @@ function validate_text($string)
 	$string = strip_tags($string);
 	$string = stripslashes($string);
 	if($sys_setting_vars["htmlentities_off"] == 0) {
-		$string = htmlentities($string,ENT_QUOTES);
+		// >> 0.5.1
+		//$string = htmlentities($string,ENT_QUOTES);
+		$string = htmlentities($string,ENT_QUOTES,$sys_config_vars['meta_charset']);
+		// << 0.5.1
 	} else {
 		$string = str_replace("'","&#039;",$string);
 		$string = str_replace("\"","&quot;",$string);
@@ -271,7 +274,10 @@ function validate_textbox($string)
 	$string = strip_tags($string);
 	$string = stripslashes($string);
 	if($sys_setting_vars["htmlentities_off"] == 0) {
-		$string = htmlentities($string,ENT_QUOTES);
+		// >> 0.5.1
+		//$string = htmlentities($string,ENT_QUOTES);
+		$string = htmlentities($string,ENT_QUOTES,$sys_config_vars['meta_charset']);
+		// << 0.5.1
 	} else {
 		$string = str_replace("'","&#039;",$string);
 	}
