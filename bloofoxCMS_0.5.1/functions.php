@@ -54,7 +54,7 @@ function check_versions($db)
 {	
 	// Compare database version with file version
 	if(get_current_version() != get_database_version($db)) {
-		echo(show_error_scren("Notice","bloofoxCMS is in maintenance. Please contact the system administrator and try again later."));
+		echo(show_error_screen("Notice","bloofoxCMS is in maintenance. Please contact the system administrator and try again later."));
 		die();
 	}
 }

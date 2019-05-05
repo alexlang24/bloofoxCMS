@@ -34,7 +34,7 @@ class admincenter {
 	
 	//**
 	// constructor
-	function admincenter($frontend=0)
+	function __construct($frontend=0)
 	{
 		$_GET['cid'] = $this->clean_int_values($_GET['cid']);
 		$_GET['eid'] = $this->clean_int_values($_GET['eid']);

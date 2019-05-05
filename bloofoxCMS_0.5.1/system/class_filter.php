@@ -30,7 +30,7 @@ class filter {
 	
 	//**
 	// constructor
-	function filter()
+	function __construct()
 	{
 	}
 	

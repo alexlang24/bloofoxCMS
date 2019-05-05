@@ -36,6 +36,10 @@ class content {
 	var $error = "";
 
 	// Constructor
+	function __construct()
+	{
+	}
+	
 	function content()
 	{
 	}

@@ -28,7 +28,7 @@ class user_management {
 	var $current_time = 0; // Current time for statistics
 	
 	// Constructor
-	function user_management()
+	function __construct()
 	{
 		$this->current_time = time();
 	}

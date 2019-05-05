@@ -66,8 +66,12 @@ if(!defined('SYS_INDEX')) {
     var $Query_ID = 0;
 
     /* public: constructor */
-    function DB_Sql($query = "") {
+    function __construct($query = "") {
         $this->query($query);
+    }
+
+    function DB_Sql($query = "") {
+        self::__construct($query = "");
     }
 
     /* public: some trivial reporting */

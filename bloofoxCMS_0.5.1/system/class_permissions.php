@@ -31,9 +31,14 @@ class permissions {
 	var $group_vars = array();
 	
 	// Constructor
-	function permissions()
+	function __construct()
 	{
 		$this->current_time = time();
+	}
+	
+	function permissions()
+	{
+		self::__construct();
 	}
 	
 	// Public: Check, if current user is logged in

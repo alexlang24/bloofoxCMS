@@ -40,12 +40,17 @@ class pagehandler {
 	
 	//**
 	// constructor
-	function pagehandler($mode,$page,$action,$tmpl_path)
+	function __construct($mode,$page,$action,$tmpl_path)
 	{
 		$this->mode = $mode;
 		$this->page = $page;
 		$this->action = $action;
 		$this->path = $tmpl_path;
+	}
+
+	function pagehandler($mode,$page,$action,$tmpl_path)
+	{
+		self::__construct($mode,$page,$action,$tmpl_path);
 	}
 	
 	//**

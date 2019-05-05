@@ -30,9 +30,14 @@ class pages {
 	var $sys_explorer_vars = array();
 
 	// Constructor
-	function pages()
+	function __construct()
 	{
 		$this->sys_time = time();
+	}
+	
+	function pages()
+	{
+		self::__construct();
 	}
 
 	// Get correct explorer entry from database

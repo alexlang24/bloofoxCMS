@@ -36,7 +36,7 @@ class plugins {
 	
 	//**
 	// constructor
-	function plugins()
+	function __construct()
 	{
 	}
 	

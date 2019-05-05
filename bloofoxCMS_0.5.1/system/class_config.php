@@ -31,9 +31,14 @@ class config {
 	var $sys_request_url = "";
 	
 	// Constructor
-	function config()
+	function __construct()
 	{
 		$this->get_request_url();
+	}
+	
+	function config()
+	{
+		self::__construct();
 	}
 	
 	// Create and get sys_request_url

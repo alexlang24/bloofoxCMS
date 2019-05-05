@@ -32,7 +32,7 @@ class structure {
 	
 	//**
 	// constructor
-	function structure($sort_distance)
+	function __construct($sort_distance)
 	{
 		$this->sort_distance = $sort_distance;
 		$this->s_array['level'] = $this->level;
