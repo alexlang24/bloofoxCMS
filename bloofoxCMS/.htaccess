@@ -42,4 +42,5 @@ RewriteRule ^(.*)\.([0-9]+)_([0-9]+).html$ index.php?page=$2&start=$3 [QSA,NC,L]
 #php_flag register_globals off
 
 # debug option to display php errors
-php_value display_errors 1
+# set 1 to enable
+php_value display_errors 0
