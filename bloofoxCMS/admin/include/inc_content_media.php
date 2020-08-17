@@ -3,7 +3,7 @@
 // This file is part of bloofoxCMS! Do not delete this copyright!!!
 // - admin/inc_content_media.php -
 //
-// Copyrights (c) 2006-2012 Alexander Lang, Germany
+// Copyrights (c) 2006-2020 Alexander Lang, Germany
 // info@bloofox.com
 // http://www.bloofox.com
 //
@@ -211,7 +211,9 @@ switch($action)
 			$array_files = get_mediacenter($path_to_files_folder);
 			asort($array_files);
 			
-			while(list($key,$val) = each($array_files))
+			// + v0.5.2
+			//while(list($key,$val) = each($array_files))
+			foreach($array_files as $key => $val)
 			{
 				$path = $path_to_files_folder;
 				
@@ -239,7 +241,9 @@ switch($action)
 			$array_images = get_mediacenter($path_to_image_folder);
 			asort($array_images);
 			
-			while(list($key,$val) = each($array_images))
+			// + v0.5.2
+			//while(list($key,$val) = each($array_images))
+			foreach($array_images as $key => $val)
 			{
 				$path = $path_to_image_folder;
 				

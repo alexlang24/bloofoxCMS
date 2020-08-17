@@ -3,7 +3,7 @@
 // This file is part of bloofoxCMS! Do not delete this copyright!!!
 // - system/class_permissions.php -
 //
-// Copyrights (c) 2006-2012 Alexander Lang, Germany
+// Copyrights (c) 2006-2020 Alexander Lang, Germany
 // info@bloofox.com
 // http://www.bloofox.com
 //
@@ -46,8 +46,8 @@ class permissions {
 	{
 		global $tbl_prefix,$sys_setting_vars;
 		
-		session_name("sid");
-		session_start;
+		//session_name("sid");
+		session_start();
 		if(isset($_SESSION["username"]) && isset($_SESSION["password"])) {
 			$db = new DB_Tpl();
 			$session_id = session_id();
@@ -80,7 +80,7 @@ class permissions {
 		
 		if($total == 1) {
 			while($db->next_record()):
-				session_name("sid");
+				//session_name("sid");
 				session_start();
 				$_SESSION["uid"] = $db->f("uid");
 				$_SESSION["username"] = $db->f("username");

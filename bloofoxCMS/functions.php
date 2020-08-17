@@ -3,7 +3,7 @@
 // This file is part of bloofoxCMS! Do not delete this copyright!!!
 // - functions.php -
 //
-// Copyrights (c) 2006-2012 Alexander Lang, Germany
+// Copyrights (c) 2006-2020 Alexander Lang, Germany
 // info@bloofox.com
 // http://www.bloofox.com
 //
@@ -602,7 +602,7 @@ function create_header($config_vars,$tmpl_vars,$explorer_vars,$sys_plugin_vars)
 // current file version
 function get_current_version()
 {
-	return("bloofoxCMS 0.5.0");
+	return("bloofoxCMS 0.5.2");
 }
 
 // current database version
