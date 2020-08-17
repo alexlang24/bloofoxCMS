@@ -21,7 +21,7 @@
 // NOTHING NEED TO BE CHANGED HERE!
 
 // Database Version
-$db_version = "bloofoxCMS 0.5.0";
+$db_version = "bloofoxCMS 0.5.2";
 
 // default language is English
 

@@ -125,15 +125,19 @@ class plugins {
 		}
 		
 		// read queries
-		for($x=0; $x<count($sys_plugin_sql); $x++)
-		{
-			$this->plugin_query[$x] = $sys_plugin_sql[$x];
+		if (is_array($sys_plugin_sql)) {
+			foreach($sys_plugin_sql as $key => $val)
+			{
+				$this->plugin_query[$key] = $val;
+			}
 		}
 		
 		// read table names
-		for($x=0; $x<count($sys_plugin_table); $x++)
-		{
-			$this->plugin_table[$x] = $sys_plugin_table[$x];
+		if (is_array($sys_plugin_table)) {
+			foreach($sys_plugin_table as $key => $val)
+			{
+				$this->plugin_table[$key] = $val;
+			}
 		}
 	}
 	

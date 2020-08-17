@@ -43,11 +43,12 @@ $update_files[4] = "update_0.3.4-0.3.5.php";
 $update_files[5] = "update_0.3.5-0.4.0.php";
 $update_files[6] = "update_0.4.0-0.4.1.php";
 $update_files[7] = "update_0.4.1-0.5.0.php";
+$update_files[8] = "update_0.5.0-0.5.2.php";
 
 // Load required libraries
 include("../config.php");
 include("../functions.php");
-require_once("../system/class_mysql.php");
+require_once("../system/class_mysqli.php");
 
 // create doctype
 echo create_doctype(0);

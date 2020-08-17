@@ -203,7 +203,7 @@ INSERT INTO `bfCMS_sys_setting` VALUES (7, 'html_mails', '0');
 INSERT INTO `bfCMS_sys_setting` VALUES (8, 'htmlentities_off', '0');
 INSERT INTO `bfCMS_sys_setting` VALUES (9, 'pw_rule', '0');
 INSERT INTO `bfCMS_sys_setting` VALUES (10, 'textbox_width', '500');
-INSERT INTO `bfCMS_sys_setting` VALUES (11, 'database_version', 'bloofoxCMS 0.5.0');
+INSERT INTO `bfCMS_sys_setting` VALUES (11, 'database_version', 'bloofoxCMS 0.5.2');
 INSERT INTO `bfCMS_sys_setting` VALUES (12, 'textbox_height', '250');
 INSERT INTO `bfCMS_sys_setting` VALUES (20, 'manual_register', '0');
 INSERT INTO `bfCMS_sys_setting` VALUES (30, 'phpmyadmin_url', '');

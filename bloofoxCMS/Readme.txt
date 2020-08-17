@@ -1,7 +1,7 @@
 //*****************************************************************//
 // - Readme.txt -
 //
-// Copyrights (c) 2006-2012 Alexander Lang, Germany
+// Copyrights (c) 2006-2020 Alexander Lang, Germany
 // http://www.bloofox.com
 //
 // bloofoxCMS is free software; you can redistribute it and/or modify
