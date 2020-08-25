@@ -3,7 +3,7 @@
 // This file is part of bloofoxCMS! Do not delete this copyright!!!
 // - plugins/module_captcha/class_captcha.php -
 //
-// Copyrights (c) 2006-2012 Alexander Lang, Germany
+// Copyrights (c) 2006-2020 Alexander Lang, Germany
 // info@bloofox.com
 // http://www.bloofox.com
 //
@@ -35,10 +35,13 @@ class captcha {
 	var $img_height = 60; // pixel
 	
 	// Constructor
-	function captcha($var)
-	{
+	function __construct($var) {
 		$this->session_var = $var;
 		$this->create();
+	}
+	function captcha($var)
+	{
+		self::__construct;
 	}
 	
 	// Create random string
